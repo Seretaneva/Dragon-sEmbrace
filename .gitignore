@@ -1,0 +1,21 @@
+# Fisierele generate automat de Unity care nu trebuie urcate pe GitHub
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Setările locale ale utilizatorului
+[Aa]ssets/[Ss]cenes/*.unity
+
+# Fișierele legate de Visual Studio și Rider
+*.csproj
+*.sln
+*.userprefs
+*.vscode/
+
+# Fișiere de sistem
+.DS_Store
+Thumbs.db
