@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewDialogueLine", menuName ="Dialogue/Line")]
