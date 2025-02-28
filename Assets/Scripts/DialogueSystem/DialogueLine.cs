@@ -12,7 +12,6 @@ public DialogueTarget dialogueTarget;
 
 [Header("Audio")]
 public AudioClip spokenText;
-public AudioClip backgroundMusic;
 public AudioClip soundEffect;
 
 [Header("Animation")]
