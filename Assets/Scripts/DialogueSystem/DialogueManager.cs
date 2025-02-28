@@ -2,12 +2,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogManager
+public class DialogManager : MonoBehaviour
 {
     
 [Header("UI Elements")]
 [SerializeField] TMP_Text speakerNameText;
-[SerializeField] TMP_Text dialogText;
+[SerializeField] TMP_Text dialogueText;
+[SerializeField] GameObject dialoguePanel;
 [SerializeField] GameObject choicePanel;
 [SerializeField] Button choiceButtonPrefab;
 [SerializeField] Button progressButton;
