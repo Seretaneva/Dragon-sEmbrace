@@ -31,6 +31,25 @@ DialogueNode currentDialogNode;
  int currentLineIndex = 0;
 bool isTyping = false;
 
+    void Start()
+    {
+        dialoguePanel.SetActive(false);
+        choicePanel.SetActive(false);
+        //ADD LISTENER TO PROGRESS BUTTON
 
+        //HIDE THE IMAGES
+        if(leftImage!= null && deactivateLeftImage)
+        {
+            leftImage.color = new Color32(255,255,255,0);
+        }
+        if(rightImage!= null && deactivateRightImage)
+        {
+            rightImage.color = new Color32(255,255,255,0);
+        }
+        if(centerImage!= null && deactivateCenterImage)
+        {
+            centerImage.color = new Color32(255,255,255,0);
+        }
+    }
 
 }

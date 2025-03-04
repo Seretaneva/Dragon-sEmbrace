@@ -119,20 +119,20 @@ TextureImporter:
       name: TextBox_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 587
-        width: 171
-        height: 169
+        x: 39
+        y: 588
+        width: 169
+        height: 168
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 70, y: 13, z: 70, w: 70}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f27958445771fb430800000000000000
-      internalID: 3800782402952206127
+      spriteID: 69d0d16ab7e1daa4cb1a21c515a13f07
+      internalID: 1309135912
       vertices: []
       indices: 
       edges: []
@@ -144,17 +144,17 @@ TextureImporter:
         x: 0
         y: 0
         width: 512
-        height: 513
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 160, y: 160, z: 160, w: 160}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0ad410c2495ba3d90800000000000000
-      internalID: -7117176613107577440
+      spriteID: 9516299ddfe4e0b4fbf82145cc904862
+      internalID: 14358455
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 04bb3eb1cb9fa1042b9ad2083db6c6a7
     internalID: 0
     vertices: []
     indices: 
@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TextBox_0: 1309135912
+      TextBox_1: 14358455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
