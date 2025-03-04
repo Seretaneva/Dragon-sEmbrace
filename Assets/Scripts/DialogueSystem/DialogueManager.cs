@@ -1,5 +1,7 @@
+using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
@@ -32,6 +34,7 @@ DialogueNode currentDialogNode;
 bool isTyping = false;
 
     void Start()
+
     {
         dialoguePanel.SetActive(false);
         choicePanel.SetActive(false);
@@ -52,4 +55,58 @@ bool isTyping = false;
         }
     }
 
+public void StartDialogue(DialogueNode startNode)
+{
+currentDialogNode = startNode;
+currentLineIndex = 0;
+DisplayCurrentLine();
+
+}
+
+void DisplayCurrentLine()
+{
+if(currentDialogNode == null || currentDialogNode.dialogLines.Length == 0)
+{
+    //END DIALOGUE
+    return;
+
+    //CHECK IF THERE ARE MORE LINES TO DISPLAY
+    if(currentLineIndex < currentDialogNode.dialogLines.Length)
+    {
+        DialogueLine line = currentDialogNode.dialogLines[currentLineIndex];
+        speakerNameText.text = line.speakerName;
+        dialogueText.text = line.dialogText;
+
+        //TARGET IMAGE TO BE PLACED FROM LINE
+        Image targetImage = GetTargetImage(line.targetImage);
+        if(targetImage != null)
+        {
+            targetImage.sprite = line.characterSprite;
+            targetImage.color = Color.white;
+
+            //PLAY AUDIO CLIPS
+
+            // ADD CORROUTINE
+        }else
+        {
+            //END OF LINE, DISPLAY CHOICES
+        }
+    }
+
+}
+}
+
+  Image GetTargetImage(DialogueTarget targetImage)
+    {
+       switch(targetImage)
+       {
+            case DialogueTarget.LeftImage: return leftImage;
+           
+            case DialogueTarget.CenterImage: return centerImage;
+           
+            case DialogueTarget.RightImage: return rightImage;
+            
+            default:return null;
+       }
+    }
 }

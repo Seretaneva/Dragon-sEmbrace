@@ -8,7 +8,7 @@ public string speakerName;
 [TextArea(3,5)]public string dialogText;
 public Sprite characterSprite;
 
-public DialogueTarget dialogueTarget;
+public DialogueTarget targetImage;
 
 [Header("Audio")]
 public AudioClip spokenText;
