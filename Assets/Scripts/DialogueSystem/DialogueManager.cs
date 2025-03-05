@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
@@ -19,6 +21,7 @@ public class DialogManager : MonoBehaviour
 [SerializeField] Image leftImage;
 [SerializeField] Image rightImage;
 [SerializeField] Image centerImage;
+
 [SerializeField] bool deactivateLeftImage;//FOR DEBUGGING
 [SerializeField] bool deactivateRightImage;
 [SerializeField] bool deactivateCenterImage;
@@ -57,20 +60,22 @@ bool isTyping = false;
 
 public void StartDialogue(DialogueNode startNode)
 {
-currentDialogNode = startNode;
-currentLineIndex = 0;
-DisplayCurrentLine();
+    dialoguePanel.SetActive(true);
+    currentDialogNode = startNode;
+    currentLineIndex = 0;
+    DisplayCurrentLine();
 
 }
 
 void DisplayCurrentLine()
 {
-if(currentDialogNode == null || currentDialogNode.dialogLines.Length == 0)
-{
-    //END DIALOGUE
-    return;
+    if(currentDialogNode == null || currentDialogNode.dialogLines.Length == 0)
+    {
+        //END DIALOGUE
+        return;
+    }
+        //CHECK IF THERE ARE MORE LINES TO DISPLAY
 
-    //CHECK IF THERE ARE MORE LINES TO DISPLAY
     if(currentLineIndex < currentDialogNode.dialogLines.Length)
     {
         DialogueLine line = currentDialogNode.dialogLines[currentLineIndex];
@@ -79,20 +84,21 @@ if(currentDialogNode == null || currentDialogNode.dialogLines.Length == 0)
 
         //TARGET IMAGE TO BE PLACED FROM LINE
         Image targetImage = GetTargetImage(line.targetImage);
-        if(targetImage != null)
+        if(targetImage != null && line.characterSprite != null)
         {
             targetImage.sprite = line.characterSprite;
             targetImage.color = Color.white;
 
             //PLAY AUDIO CLIPS
 
-            // ADD CORROUTINE
-        }else
+            // ADD COROUTINE ANIMATE CHARACTER AND TYPE TEXT AFTERWARDS 
+            StartCoroutine(AnimateAndType(line,targetImage));
+        }
+        else
         {
             //END OF LINE, DISPLAY CHOICES
         }
-    }
-
+    
 }
 }
 
@@ -105,8 +111,52 @@ if(currentDialogNode == null || currentDialogNode.dialogLines.Length == 0)
             case DialogueTarget.CenterImage: return centerImage;
            
             case DialogueTarget.RightImage: return rightImage;
+
+            
             
             default:return null;
        }
+    }
+    IEnumerator AnimateAndType(DialogueLine line, Image targetImage)
+    {
+        //PERFORM AN ANIMATION BASEN ON LINE SETTINGS
+        if(line.animationType != DialogueAnimation.None)
+        {
+        //PLAY ANIMATION
+        yield return new WaitForSeconds(line.animationDuration);
+        }
+        //START WRITING TEXT
+
+        yield return StartCoroutine(TypeText(line.dialogText));
+    }
+
+    IEnumerator TypeText(string text)
+    {
+        isTyping = true;
+        dialogueText.text  = "";//CLEAR OLD TEXT
+        int visibleCharacterCount = 0; // TRACK VISIBLE CHARACTERS FOR TEXT MESH PRO
+        for(int i = 0; i < text.Length;i++)
+        {
+            //FILTER RICH TEXT
+            if(text[i] == '<')
+            {
+                int closingTagIndex = text.IndexOf('>',i);
+                if(closingTagIndex != -1)
+                {
+                    //ADD THE ENTIRE TAG TO DIALOGUE TEXT INSTANTLY
+                    dialogueText.text += text.Substring(i, closingTagIndex - i + 1);
+                    i = closingTagIndex;//SKIP TO THE END OF THE TAG
+                    continue; 
+                }
+            }
+            //ADD THE NEXT VISIBLE CHARACTERS
+            dialogueText.text += text[i];
+            visibleCharacterCount++;
+            //ENSURE TEXT MESH PRO UPDATES PPROPERLY
+            dialogueText.maxVisibleCharacters = visibleCharacterCount;
+            yield return new WaitForSeconds(textSpeed);
+        }
+
+        isTyping = false;//MARK TYPING COMPLETE
     }
 }

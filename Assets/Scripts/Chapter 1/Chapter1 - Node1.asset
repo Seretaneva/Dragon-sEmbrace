@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1910a859c178e42478b1b7884d36051f, type: 3}
   m_Name: Chapter1 - Node1
   m_EditorClassIdentifier: 
+  dialogLines:
+  - {fileID: 11400000, guid: 628f2d67809699849b7df0074c6638f5, type: 2}
+  choices: []
+  nextScene: 
