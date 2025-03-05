@@ -27,8 +27,8 @@ public class DialogManager : MonoBehaviour
 [SerializeField] bool deactivateCenterImage;
 
 [Header("Audio")]
-[SerializeField] AudioSource voiceSound;
-[SerializeField] AudioSource effectSound;
+[SerializeField] AudioSource voiceAudioSource;
+[SerializeField] AudioSource effectAudioSource;
 
 [Header("Settings")]
 [SerializeField] float textSpeed = 0.05f;
@@ -82,25 +82,28 @@ void DisplayCurrentLine()
         speakerNameText.text = line.speakerName;
         dialogueText.text = line.dialogText;
 
-        //TARGET IMAGE TO BE PLACED FROM LINE
+      
         Image targetImage = GetTargetImage(line.targetImage);
+
         if(targetImage != null && line.characterSprite != null)
         {
             targetImage.sprite = line.characterSprite;
             targetImage.color = Color.white;
-
+        }
             //PLAY AUDIO CLIPS
+         
+            PlayAudio(line);
 
             // ADD COROUTINE ANIMATE CHARACTER AND TYPE TEXT AFTERWARDS 
             StartCoroutine(AnimateAndType(line,targetImage));
-        }
+    }   
         else
         {
             //END OF LINE, DISPLAY CHOICES
         }
     
 }
-}
+
 
   Image GetTargetImage(DialogueTarget targetImage)
     {
@@ -158,5 +161,29 @@ void DisplayCurrentLine()
         }
 
         isTyping = false;//MARK TYPING COMPLETE
+    }
+    void PlayAudio(DialogueLine line)
+    {
+        Debug.Log("Metoda PlayAudio este apelata");
+        //IF THERE IS SOMETHING PLAYING, STOP IT
+
+        if(voiceAudioSource.isPlaying)
+        {
+            voiceAudioSource.Stop();
+        }
+     
+        //PLAY VOICE TEXT
+        if(line.spokenText != null)
+        { 
+            voiceAudioSource.clip = line.spokenText;
+            voiceAudioSource.Play();
+        }
+   
+        //PLAY EFFECT AUDIO
+        if(line.soundEffect != null)
+        {
+            effectAudioSource.clip = line.soundEffect;
+            effectAudioSource.Play();
+        }
     }
 }
