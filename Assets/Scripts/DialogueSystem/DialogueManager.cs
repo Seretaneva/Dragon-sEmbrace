@@ -42,7 +42,7 @@ bool isTyping = false;
         dialoguePanel.SetActive(false);
         choicePanel.SetActive(false);
         //ADD LISTENER TO PROGRESS BUTTON
-
+        progressButton.onClick.AddListener(OnClickEvent);
         //HIDE THE IMAGES
         if(leftImage!= null && deactivateLeftImage)
         {
@@ -164,7 +164,7 @@ void DisplayCurrentLine()
     }
     void PlayAudio(DialogueLine line)
     {
-        Debug.Log("Metoda PlayAudio este apelata");
+    
         //IF THERE IS SOMETHING PLAYING, STOP IT
 
         if(voiceAudioSource.isPlaying)
@@ -186,4 +186,35 @@ void DisplayCurrentLine()
             effectAudioSource.Play();
         }
     }
+
+    public void OnClickEvent()
+    {
+        if(isTyping)
+        {
+            //SKIP TYPING
+            StopAllCoroutines();
+            //SHOW ALL TEXT LINE
+            DialogueLine currentLine = currentDialogNode.dialogLines[currentLineIndex];
+            dialogueText.text = currentLine.dialogText;//ASSIGN THE FULL DIALOGUE TEXT LINE
+            dialogueText.maxVisibleCharacters = currentLine.dialogText.Length;
+            isTyping = false;
+            //STOP VOICE AUDIO
+           
+            if(voiceAudioSource.isPlaying)
+            {
+                 voiceAudioSource.Stop();
+            }
+        }
+        
+            currentLineIndex++;
+            DisplayCurrentLine();
+        
+    }
+
+    void DisplayChoices()
+    {
+        //DELETE ALL CHOICE BUTTONS
+
+    }
+
 }
