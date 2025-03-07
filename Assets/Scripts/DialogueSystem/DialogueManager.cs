@@ -209,9 +209,12 @@ void DisplayCurrentLine()
                  voiceAudioSource.Stop();
             }
         }
-        
-            currentLineIndex++;
+        else
+        {
+             currentLineIndex++;
             DisplayCurrentLine();
+        }
+         
         
     }
 
