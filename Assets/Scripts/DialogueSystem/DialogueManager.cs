@@ -128,6 +128,8 @@ void DisplayCurrentLine()
         if(line.animationType != DialogueAnimation.None)
         {
         //PLAY ANIMATION
+        PLayAnimation(line.animationType,targetImage);
+        
         yield return new WaitForSeconds(line.animationDuration);
         }
         //START WRITING TEXT
@@ -266,5 +268,40 @@ void DisplayCurrentLine()
         //TRANSITION TO ANOTHER SCENE IF NEEDED
 
         
+    }
+
+    void PLayAnimation(DialogueAnimation animationType, Image targetImage)
+    {
+        if(targetImage == null) return;
+        //GET ANIMATOR COMPONENT
+
+        Animator animator = targetImage.GetComponent<Animator>();
+        if(animator == null) return;
+        //TRIGGER THE CORRECT ANIMATION
+        switch(animationType)
+        {
+            case DialogueAnimation.EnteringScene:
+                animator.SetTrigger("enter");
+                break;
+            case DialogueAnimation.ExitingScene:
+                animator.SetTrigger("exit");
+                break;
+            case DialogueAnimation.Jumping:
+                animator.SetTrigger("jump");
+                break;
+            case DialogueAnimation.Rotating:
+                animator.SetTrigger("rotate");
+                break;
+            case DialogueAnimation.Scaling:
+                animator.SetTrigger("scale");
+                break;
+            case DialogueAnimation.Shaking:
+                animator.SetTrigger("shake");
+                break;
+            default:
+                Debug.LogWarning($"Unhandled animation type {animationType}");
+                break;
+        }
+
     }
 }
