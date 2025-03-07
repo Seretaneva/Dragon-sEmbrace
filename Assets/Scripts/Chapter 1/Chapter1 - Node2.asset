@@ -9,14 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
-  m_Name: Chapter1 - Line2
+  m_Script: {fileID: 11500000, guid: 1910a859c178e42478b1b7884d36051f, type: 3}
+  m_Name: Chapter1 - Node2
   m_EditorClassIdentifier: 
-  speakerName: Narator
-  dialogText: Era super
-  characterSprite: {fileID: 0}
-  targetImage: 0
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 0}
-  animationDuration: 1
-  animationType: 0
+  dialogLines:
+  - {fileID: 11400000, guid: 531f0001fcdbd4a4080e445e71739935, type: 2}
+  choices: []
+  nextScene: 

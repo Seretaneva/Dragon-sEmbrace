@@ -21,6 +21,6 @@ MonoBehaviour:
   characterSprite: {fileID: 0}
   targetImage: 0
   spokenText: {fileID: 8300000, guid: 36b4d00fe692ded4e846375cb2556f06, type: 3}
-  soundEffect: {fileID: 8300000, guid: 9514433f1fc12464ab29bff018e10051, type: 3}
+  soundEffect: {fileID: 8300000, guid: 8dd50e6dfcd37da43bd5e3a1d26f69f5, type: 3}
   animationDuration: 1
   animationType: 0

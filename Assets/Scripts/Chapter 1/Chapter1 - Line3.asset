@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
-  m_Name: Chapter1 - Line2
+  m_Name: Chapter1 - Line3
   m_EditorClassIdentifier: 
   speakerName: Narator
-  dialogText: Era super
+  dialogText: Merge node 2 linia 3
   characterSprite: {fileID: 0}
   targetImage: 0
   spokenText: {fileID: 0}

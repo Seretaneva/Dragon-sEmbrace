@@ -14,5 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogLines:
   - {fileID: 11400000, guid: 628f2d67809699849b7df0074c6638f5, type: 2}
-  choices: []
+  - {fileID: 11400000, guid: 5ce388e5e9705cc418beddfea8ef680c, type: 2}
+  choices:
+  - choiceText: Sure!
+    nextNode: {fileID: 11400000, guid: 63436ce043d6c1749b930b617926a8ac, type: 2}
+  - choiceText: No!
+    nextNode: {fileID: 11400000, guid: fe10c3dc5c1e67a4fad80511721acc93, type: 2}
   nextScene: 

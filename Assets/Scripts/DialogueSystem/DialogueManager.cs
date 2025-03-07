@@ -72,6 +72,7 @@ void DisplayCurrentLine()
     if(currentDialogNode == null || currentDialogNode.dialogLines.Length == 0)
     {
         //END DIALOGUE
+        EndDialogue();
         return;
     }
         //CHECK IF THERE ARE MORE LINES TO DISPLAY
@@ -100,6 +101,7 @@ void DisplayCurrentLine()
         else
         {
             //END OF LINE, DISPLAY CHOICES
+            DisplayChoices();
         }
     
 }
@@ -214,7 +216,55 @@ void DisplayCurrentLine()
     void DisplayChoices()
     {
         //DELETE ALL CHOICE BUTTONS
+        foreach(Transform child in  choicePanel.transform)
+        {
+                Destroy(child.transform);
+        }
+        choicePanel.SetActive(true);
+        //CREATE ALL BUTTONS FROM CHOICES
+        foreach(Choice choice in currentDialogNode.choices)
+        {
+            Button choiceButton = Instantiate(choiceButtonPrefab,choicePanel.transform);
+            choiceButton.GetComponentInChildren<TMP_Text>().text = choice.choiceText;
+            choiceButton.onClick.AddListener(()=> SelectChoice(choice));
+        }
+    }
+    
+    void SelectChoice(Choice choice)
+    {
+        if(choice.nextNode != null)
+        {
+            choicePanel.SetActive(false);
+           StartDialogue(choice.nextNode);
+        }
+        else
+        {
+            //END THE DIALOGUE NODE 
+            EndDialogue();
+
+        }
 
     }
 
+    void EndDialogue()
+    {
+        dialogueText.text = "";
+        speakerNameText.text = "";
+        dialoguePanel.SetActive(false);
+        choicePanel.SetActive(false);
+        //STOP ALL AUDIO
+        if(effectAudioSource.isPlaying)
+        {
+             effectAudioSource.Stop();
+        }
+        
+        if(voiceAudioSource.isPlaying)
+        {
+            voiceAudioSource.Stop();
+        }
+        Debug.Log("Dialogue has ended");
+        //TRANSITION TO ANOTHER SCENE IF NEEDED
+
+        
+    }
 }
