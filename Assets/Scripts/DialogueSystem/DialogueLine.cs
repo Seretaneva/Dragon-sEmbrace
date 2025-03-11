@@ -32,8 +32,12 @@ CenterImage
 public enum DialogueAnimation{
     
     None,
-    EnteringScene,
-    ExitingScene,
+    LeftEnteringScene,
+    RightEnteringScene,
+    LeftExitingScene,
+    RightExitingScene,
+    CenterEnteringScene,
+    
     Jumping,
     Rotating,
     Scaling,

@@ -283,11 +283,20 @@ void DisplayCurrentLine()
         //TRIGGER THE CORRECT ANIMATION
         switch(animationType)
         {
-            case DialogueAnimation.EnteringScene:
-                animator.SetTrigger("enter");
+            case DialogueAnimation.LeftEnteringScene:
+                animator.SetTrigger("leftEnter");
                 break;
-            case DialogueAnimation.ExitingScene:
-                animator.SetTrigger("exit");
+            case DialogueAnimation.LeftExitingScene:
+                animator.SetTrigger("leftExit");
+                break;
+                case DialogueAnimation.RightEnteringScene:
+                animator.SetTrigger("rightEnter");
+                break;
+            case DialogueAnimation.RightExitingScene:
+                animator.SetTrigger("rightExit");
+                break;
+                 case DialogueAnimation.CenterEnteringScene:
+                animator.SetTrigger("centerEnter");
                 break;
             case DialogueAnimation.Jumping:
                 animator.SetTrigger("jump");
