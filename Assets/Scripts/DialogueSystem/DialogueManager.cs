@@ -310,6 +310,10 @@ void DisplayCurrentLine()
             case DialogueAnimation.Shaking:
                 animator.SetTrigger("shake");
                 break;
+                 case DialogueAnimation.Floating:
+                animator.SetTrigger("float");
+                break;
+                
             default:
                 Debug.LogWarning($"Unhandled animation type {animationType}");
                 break;

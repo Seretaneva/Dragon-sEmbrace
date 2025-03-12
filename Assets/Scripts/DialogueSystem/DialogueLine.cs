@@ -41,7 +41,8 @@ public enum DialogueAnimation{
     Jumping,
     Rotating,
     Scaling,
-    Shaking
+    Shaking,
+    Floating
 
 
 }
