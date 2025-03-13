@@ -15,8 +15,8 @@ MonoBehaviour:
   speakerName: Narator
   dialogText: Era super
   characterSprite: {fileID: 0}
-  targetImage: 0
+  targetImage: 1
   spokenText: {fileID: 0}
   soundEffect: {fileID: 0}
   animationDuration: 1
-  animationType: 0
+  animationType: 4

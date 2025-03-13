@@ -22,9 +22,6 @@ public class DialogManager : MonoBehaviour
 [SerializeField] Image rightImage;
 [SerializeField] Image centerImage;
 
-[SerializeField] bool deactivateLeftImage;//FOR DEBUGGING
-[SerializeField] bool deactivateRightImage;
-[SerializeField] bool deactivateCenterImage;
 
 [Header("Audio")]
 [SerializeField] AudioSource voiceAudioSource;
@@ -43,19 +40,7 @@ bool isTyping = false;
         choicePanel.SetActive(false);
         //ADD LISTENER TO PROGRESS BUTTON
         progressButton.onClick.AddListener(OnClickEvent);
-        //HIDE THE IMAGES
-        if(leftImage!= null && deactivateLeftImage)
-        {
-            leftImage.color = new Color32(255,255,255,0);
-        }
-        if(rightImage!= null && deactivateRightImage)
-        {
-            rightImage.color = new Color32(255,255,255,0);
-        }
-        if(centerImage!= null && deactivateCenterImage)
-        {
-            centerImage.color = new Color32(255,255,255,0);
-        }
+       
     }
 
 public void StartDialogue(DialogueNode startNode)
@@ -269,7 +254,10 @@ void DisplayCurrentLine()
         }
         Debug.Log("Dialogue has ended");
         //TRANSITION TO ANOTHER SCENE IF NEEDED
-
+    if(!string.IsNullOrEmpty(currentDialogNode.nextScene))
+    {
+        SceneTransitionManager.Instance.LoadSceneWithFade(currentDialogNode.nextScene);
+    }
         
     }
 
