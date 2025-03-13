@@ -18,9 +18,9 @@ MonoBehaviour:
     regina Lyra conduceau cu \xEEn\u021Belepciune acel t\u0103r\xE2m. Regele Eldran
     apar\u021Binea clanului omenesc, iar regina Lyra f\u0103cea parte din clanul
     druizilor."
-  characterSprite: {fileID: -9207164597663411886, guid: 06d34aaac3718e644a5ce2fb92bdd967, type: 3}
-  targetImage: 0
+  characterSprite: {fileID: 9099799246485454495, guid: 7492f1786fdb13c41892c8c68532085e, type: 3}
+  targetImage: 1
   spokenText: {fileID: 8300000, guid: 36b4d00fe692ded4e846375cb2556f06, type: 3}
   soundEffect: {fileID: 8300000, guid: 8dd50e6dfcd37da43bd5e3a1d26f69f5, type: 3}
   animationDuration: 1
-  animationType: 1
+  animationType: 2
