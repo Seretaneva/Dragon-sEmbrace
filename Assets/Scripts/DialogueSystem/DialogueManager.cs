@@ -86,7 +86,15 @@ void DisplayCurrentLine()
         else
         {
             //END OF LINE, DISPLAY CHOICES
-            DisplayChoices();
+            if(currentDialogNode.choices.Length > 0 )
+            {
+                 DisplayChoices();
+            }
+            else
+            {
+                EndDialogue();
+            }
+           
         }
     
 }
@@ -254,6 +262,10 @@ void DisplayCurrentLine()
         }
         Debug.Log("Dialogue has ended");
         //TRANSITION TO ANOTHER SCENE IF NEEDED
+        if(currentDialogNode.IsUnityNull()){
+            Debug.Log("nu sa gasit node");
+        }
+        Debug.Log(currentDialogNode.name);
     if(!string.IsNullOrEmpty(currentDialogNode.nextScene))
     {
         SceneTransitionManager.Instance.LoadSceneWithFade(currentDialogNode.nextScene);

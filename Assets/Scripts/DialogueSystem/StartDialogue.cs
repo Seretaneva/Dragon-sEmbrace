@@ -4,10 +4,11 @@ public class StartDialogue : MonoBehaviour
 {
     [SerializeField] DialogManager manager;
     [SerializeField] DialogueNode startNode;
+    [SerializeField] float timeBeforeDialogStart = 1.0f;
      
     void Start()
     {
-      Invoke("StartGame",1f);
+      Invoke("StartGame",timeBeforeDialogStart);
     }
 
     void StartGame()

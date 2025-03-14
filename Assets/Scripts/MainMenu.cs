@@ -7,6 +7,7 @@ public class MainMenu: MonoBehaviour
     [SerializeField] Button StartGameButton;
     [SerializeField] Button ContinueButton;
     [SerializeField] Button ExitButton;
+    [SerializeField] string StartScene;
     void Start()
     {
         if(StartGameButton != null)
@@ -20,7 +21,7 @@ public class MainMenu: MonoBehaviour
     }
     public void StartGame()
     {
-        SceneTransitionManager.Instance.LoadSceneWithFade("Chapter1");
+        SceneTransitionManager.Instance.LoadSceneWithFade(StartScene);
     }
     public void ExitGame()
     {
