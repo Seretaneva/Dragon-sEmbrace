@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewDialogueLine", menuName ="Dialogue/Line")]
@@ -6,9 +7,12 @@ public class DialogueLine : ScriptableObject
 {
 public string speakerName;
 [TextArea(3,5)]public string dialogText;
+
+
 public Sprite characterSprite;
 
 public DialogueTarget targetImage;
+
 
 [Header("Audio")]
 public AudioClip spokenText;

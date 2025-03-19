@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Chapter1-Scene1
   m_EditorClassIdentifier: 
   dialogLines:
-  - {fileID: 11400000, guid: bf2be72e71ba80848b10a9026fb1e31e, type: 2}
-  - {fileID: 11400000, guid: 6a9dc83f5c8fda24e9deeb1c0550b570, type: 2}
-  - {fileID: 11400000, guid: 689e4e5d39d5f8e4e87eca2b5ae43987, type: 2}
-  - {fileID: 11400000, guid: c99afd8b2b597534db59b39d54860404, type: 2}
+  - {fileID: 11400000, guid: 04cc592a9e7c55441877213cb53fa13b, type: 2}
+  - {fileID: 11400000, guid: 598d5066c10c1074d916a4d4e9c24a90, type: 2}
+  - {fileID: 11400000, guid: cb1fafe1c9a3364489f5ddb2ba8d2b7b, type: 2}
+  - {fileID: 11400000, guid: 577ccd53a69385c44bdeb15333151eba, type: 2}
+  - {fileID: 11400000, guid: 6f32e6f320d27454a8da9f8ee98e6135, type: 2}
+  - {fileID: 11400000, guid: 11865b92bdede6649b07634c1b01c682, type: 2}
   choices: []
   nextScene: Chapter1 Scene 2

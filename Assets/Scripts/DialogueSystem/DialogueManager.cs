@@ -70,12 +70,14 @@ void DisplayCurrentLine()
 
       
         Image targetImage = GetTargetImage(line.targetImage);
+  
 
         if(targetImage != null && line.characterSprite != null)
         {
             targetImage.sprite = line.characterSprite;
             targetImage.color = Color.white;
         }
+    
             //PLAY AUDIO CLIPS
          
             PlayAudio(line);
