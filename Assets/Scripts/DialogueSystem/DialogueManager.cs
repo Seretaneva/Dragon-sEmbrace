@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using static TMPro.TextMeshProUGUI;
 
 public class DialogManager : MonoBehaviour
 {
@@ -36,6 +37,7 @@ bool isTyping = false;
     void Start()
 
     {
+        dialogueText.text = "";
         dialoguePanel.SetActive(false);
         choicePanel.SetActive(false);
         //ADD LISTENER TO PROGRESS BUTTON
@@ -119,21 +121,29 @@ void DisplayCurrentLine()
     }
     IEnumerator AnimateAndType(DialogueLine line, Image targetImage)
     {
+       
         //PERFORM AN ANIMATION BASEN ON LINE SETTINGS
         if(line.animationType != DialogueAnimation.None)
         {
         //PLAY ANIMATION
         PLayAnimation(line.animationType,targetImage);
         
-        yield return new WaitForSeconds(line.animationDuration);
         }
         //START WRITING TEXT
-
         yield return StartCoroutine(TypeText(line.dialogText));
+
+        if (line.animationType != DialogueAnimation.None)
+    {
+        yield return new WaitForSeconds(line.animationDuration);
+    }
+        
+        
+       
     }
 
     IEnumerator TypeText(string text)
     {
+        if(isTyping) yield break;
         isTyping = true;
         dialogueText.text  = "";//CLEAR OLD TEXT
         int visibleCharacterCount = 0; // TRACK VISIBLE CHARACTERS FOR TEXT MESH PRO

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line11
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: " \xCEntr-o camer\u0103 a palatului, Nuala \xEEi observ\u0103 de la
+    distan\u021B\u0103 pe Lyra \u0219i Eldran. Cei doi sunt ad\xE2nci\u021Bi \xEEn
+    conversa\u021Bie, iar Eldran \xEEi z\xE2mbe\u0219te cu c\u0103ldur\u0103 Lyrei,
+    ating\xE2ndu-i m\xE2na \xEEntr-un gest de afec\u021Biune. "
+  characterSprite: {fileID: -2258455025132767157, guid: dac4964b8297a1a48916e7bbd76dfd51, type: 3}
+  targetImage: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}
+  animationDuration: 1
+  animationType: 1

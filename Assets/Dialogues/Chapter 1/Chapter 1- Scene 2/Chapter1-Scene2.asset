@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1910a859c178e42478b1b7884d36051f, type: 3}
+  m_Name: Chapter1-Scene2
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - {fileID: 11400000, guid: 8087c19c3911e2a48a585036e98f67ac, type: 2}
+  - {fileID: 11400000, guid: 66b6f5f939ce6e94590fdfb6a9f3de4c, type: 2}
+  choices:
+  - choiceText: "De ce ea trebuie s\u0103 aib\u0103 totul?"
+    nextNode: {fileID: 0}
+  - choiceText: "\xCEntr-o zi, voi lua \xEEnapoi ce mi se cuvine. "
+    nextNode: {fileID: 0}
+  - choiceText: "Poate e mai bine s\u0103 nu simt asta\u2026 dar pur \u0219i simplu
+      nu m\u0103 pot ab\u021Bine. "
+    nextNode: {fileID: 0}
+  nextScene: 

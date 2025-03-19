@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line12
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: " Lyra r\xE2de, cu o expresie luminoas\u0103. Fa\u021Ba Nualei este
+    umbrit\u0103 de o expresie de dispre\u021B \u0219i invidie.\r\n"
+  characterSprite: {fileID: 9099799246485454495, guid: 7492f1786fdb13c41892c8c68532085e, type: 3}
+  targetImage: 1
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: b520d337423f50d41bc377543ee74489, type: 3}
+  animationDuration: 1
+  animationType: 2
