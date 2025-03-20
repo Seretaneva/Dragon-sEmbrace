@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line17
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: "<size=50>O voce interioar\u0103 \xEEi \u0219opte\u0219te c\u0103 \xEEntr-o
+    zi, toate acestea \xEEi vor apar\u021Bine ei.</size>"
+  characterSprite: {fileID: -505747286856160987, guid: e3c57d8a5a390fa4d9c46c5c97c23ac3, type: 3}
+  targetImage: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 5d02bfdc082c1744099e459b1f7b7cf4, type: 3}
+  animationDuration: 1
+  animationType: 0

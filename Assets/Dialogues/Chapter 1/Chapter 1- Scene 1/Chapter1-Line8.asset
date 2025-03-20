@@ -17,8 +17,13 @@ MonoBehaviour:
     era \xEEndreptat\u0103 c\u0103tre Lyra, ura \u0219i invidia se ad\xE2nceau \xEEn
     sufletul Nualei.\r\n"
   characterSprite: {fileID: 0}
-  targetImage: 0
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 0}
   animationDuration: 1
   animationType: 0
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 9
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 4b6514981a2ace04085b73d585a91c26, type: 3}

@@ -17,10 +17,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 66b6f5f939ce6e94590fdfb6a9f3de4c, type: 2}
   choices:
   - choiceText: "De ce ea trebuie s\u0103 aib\u0103 totul?"
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 66ca79027b9ad334da677fe638db043c, type: 2}
   - choiceText: "\xCEntr-o zi, voi lua \xEEnapoi ce mi se cuvine. "
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 796bb6e26cc884c4cb4919c7675ef621, type: 2}
   - choiceText: "Poate e mai bine s\u0103 nu simt asta\u2026 dar pur \u0219i simplu
       nu m\u0103 pot ab\u021Bine. "
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 76e2c73feb2d0ba4a8a2abec125d597a, type: 2}
   nextScene: 

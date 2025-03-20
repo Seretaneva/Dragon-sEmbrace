@@ -18,8 +18,13 @@ MonoBehaviour:
     mai pu\u021Bin talentat\u0103 \xEEn compara\u021Bie cu Lyra, care aducea pace
     \u0219i veselie oriunde mergea. "
   characterSprite: {fileID: 0}
-  targetImage: 0
+  animationDuration: 1
+  animationType: 2
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
   spokenText: {fileID: 0}
   soundEffect: {fileID: 0}
-  animationDuration: 1
-  animationType: 0

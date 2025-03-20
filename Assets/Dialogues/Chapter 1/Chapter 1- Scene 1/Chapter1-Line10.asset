@@ -18,8 +18,13 @@ MonoBehaviour:
     ca flac\u0103ra, s-a \xEEndr\u0103gostit de ea pe loc, ne\u021Bin\xE2nd cont
     de dragostea ascuns\u0103 a Nualei pentru el.\r\n"
   characterSprite: {fileID: 0}
-  targetImage: 0
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 0}
   animationDuration: 1
   animationType: 0
+  secondCharacterSprite: {fileID: 9099799246485454495, guid: 7492f1786fdb13c41892c8c68532085e, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 3
+  thirdCharacterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 11efa4068e6993a48b5626936811f8bc, type: 3}

@@ -17,9 +17,9 @@ MonoBehaviour:
     cele dou\u0103 surori. Era plin\u0103 de via\u021B\u0103 \u0219i energie, iar
     frumuse\u021Bea ei au recunoscut-o peste toate t\u0103r\xE2murile apropiate.
     \r\n"
-  characterSprite: {fileID: 0}
+  characterSprite: {fileID: 9099799246485454495, guid: 7492f1786fdb13c41892c8c68532085e, type: 3}
   targetImage: 0
   spokenText: {fileID: 0}
   soundEffect: {fileID: 0}
   animationDuration: 1
-  animationType: 0
+  animationType: 1

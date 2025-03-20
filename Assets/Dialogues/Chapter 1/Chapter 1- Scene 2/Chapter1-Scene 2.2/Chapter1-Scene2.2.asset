@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1910a859c178e42478b1b7884d36051f, type: 3}
+  m_Name: Chapter1-Scene2.2
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - {fileID: 11400000, guid: 7470d8f8f25767d41b91a02268415695, type: 2}
+  - {fileID: 11400000, guid: c4c1f1661dfdba444ab8f0b0c3f67672, type: 2}
+  - {fileID: 11400000, guid: e7367b4f747e48249847fbde946fcbd5, type: 2}
+  choices: []
+  nextScene: Chapter1 Scene 3

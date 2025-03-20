@@ -17,9 +17,9 @@ MonoBehaviour:
     distan\u021B\u0103 pe Lyra \u0219i Eldran. Cei doi sunt ad\xE2nci\u021Bi \xEEn
     conversa\u021Bie, iar Eldran \xEEi z\xE2mbe\u0219te cu c\u0103ldur\u0103 Lyrei,
     ating\xE2ndu-i m\xE2na \xEEntr-un gest de afec\u021Biune. "
-  characterSprite: {fileID: -2258455025132767157, guid: dac4964b8297a1a48916e7bbd76dfd51, type: 3}
+  characterSprite: {fileID: -544578560165824965, guid: e9c4027354f04d945b3e8fcc16e13b56, type: 3}
   targetImage: 0
   spokenText: {fileID: 0}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 1812a53bd567b5c4ca639f8aaced6f4e, type: 3}
   animationDuration: 1
   animationType: 1

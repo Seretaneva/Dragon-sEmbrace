@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chapter1-Line2
   m_EditorClassIdentifier: 
   speakerName: Narator
-  dialogText: "<size=50>Cu <color=red>cinci mii de ani \xEEn urm\u0103 </color>,
+  dialogText: "<size=50>Cu <color=#B71C1C>cinci mii de ani \xEEn urm\u0103 </color>,
     un grup de oameni a fost primul care a reu\u0219it s\u0103 stabileasc\u0103 o
     leg\u0103tur\u0103 str\xE2ns\u0103 cu draconii.</size>"
   characterSprite: {fileID: 0}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line24
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: " \xCEns\u0103, Nuala, auzind vestea, a fost cuprins\u0103 de disperare
+    \u0219i furie. \xCE\u0219i dorea s\u0103-i otr\u0103veasc\u0103 pe cei doi, dar
+    \u0219i-a dat seama c\u0103 vinov\u0103\u021Bia ei ar fi fost u\u0219or descoperit\u0103.\r\n\r\n"
+  characterSprite: {fileID: 0}
+  animationDuration: 1
+  animationType: 2
+  secondCharacterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 5
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 4b6514981a2ace04085b73d585a91c26, type: 3}

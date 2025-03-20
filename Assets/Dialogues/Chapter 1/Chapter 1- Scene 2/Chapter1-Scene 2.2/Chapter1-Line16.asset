@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line16
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: "O flac\u0103r\u0103 de hot\u0103r\xE2re \xEEi lumineaz\u0103 privirea.<color=red>
+    A acceptat prea mult timp aceast\u0103 umilire, l\u0103s\xE2ndu-\u0219i sora
+    s\u0103 ia tot ce trebuia s\u0103 fie al ei.</color>"
+  characterSprite: {fileID: 0}
+  targetImage: 1
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}
+  animationDuration: 1
+  animationType: 4

@@ -17,8 +17,13 @@ MonoBehaviour:
     ad\xE2ncul inimii, sim\u021Bea o gelozie cresc\xE2nd\u0103 fa\u021B\u0103 de
     sora ei."
   characterSprite: {fileID: 0}
-  targetImage: 1
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 0}
   animationDuration: 1
   animationType: 0
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 3015776589659033986, guid: 3d41a21acda00b344931c4ec86ddd7b4, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 4
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}

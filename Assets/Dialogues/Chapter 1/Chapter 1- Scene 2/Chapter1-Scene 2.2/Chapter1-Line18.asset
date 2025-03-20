@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line18
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: "Nuala \xEE\u0219i ridic\u0103 fruntea, privindu-i de departe cu o
+    expresie de ghea\u021B\u0103: doar timpul o desp\u0103r\u021Bea de ziua \xEEn
+    care va fi ea regina.\r\n"
+  characterSprite: {fileID: 3015776589659033986, guid: 3d41a21acda00b344931c4ec86ddd7b4, type: 3}
+  targetImage: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}
+  animationDuration: 1
+  animationType: 3

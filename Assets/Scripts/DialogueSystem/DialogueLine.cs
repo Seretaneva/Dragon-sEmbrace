@@ -8,45 +8,54 @@ public class DialogueLine : ScriptableObject
 public string speakerName;
 [TextArea(3,5)]public string dialogText;
 
-
+[Header("Left Character")]
 public Sprite characterSprite;
 
-public DialogueTarget targetImage;
+[Header("Left Character Animation")]
+public float animationDuration = 1;
+public DialogueAnimation animationType;
+
+
+[Header("Center Character")]
+public Sprite secondCharacterSprite;
+
+
+[Header("Center Character Animation ")]
+public float secondAnimationDuration = 1;
+public DialogueAnimation secondAnimationType;
+
+
+[Header("Right Character")]
+public Sprite thirdCharacterSprite;
+
+[Header("Right Character Animation")]
+public float thirdAnimationDuration = 1;
+public DialogueAnimation thirdAnimationType;
 
 
 [Header("Audio")]
 public AudioClip spokenText;
 public AudioClip soundEffect;
-
-[Header("Animation")]
-public float animationDuration = 1;
-
-public DialogueAnimation animationType;
-
 }
 
-public enum DialogueTarget
-{
-LeftImage,
-RightImage,
-CenterImage
+// public enum DialogueTarget
+// {
+// LeftImage,
+// RightImage,
+// CenterImage
 
-}
+// }
 
 public enum DialogueAnimation{
-    
     None,
     LeftEnteringScene,
-    RightEnteringScene,
     LeftExitingScene,
-    RightExitingScene,
     CenterEnteringScene,
-    
+    RightEnteringScene,
+    RightExitingScene,  
     Jumping,
     Rotating,
     Scaling,
     Shaking,
     Floating
-
-
 }

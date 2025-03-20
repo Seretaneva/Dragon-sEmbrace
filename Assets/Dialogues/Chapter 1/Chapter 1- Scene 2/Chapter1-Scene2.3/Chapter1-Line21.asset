@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line21
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: "\u0218i totu\u0219i\u2026 oric\xE2t ar fi \xEEncercat s\u0103 o \xEEn\u0103bu\u0219e,
+    invidia nu f\u0103cea dec\xE2t s\u0103 creasc\u0103, ca un foc ascuns sub cenu\u0219\u0103.\r\n"
+  characterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}
+  targetImage: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}
+  animationDuration: 1
+  animationType: 3

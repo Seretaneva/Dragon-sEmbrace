@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line20
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: " O parte din ea \u0219tia c\u0103 ar trebui s\u0103 se bucure pentru
+    sora ei, dar alta, mult mai puternic\u0103, <color=red>refuza </color>s\u0103
+    lase aceast\u0103 emo\u021Bie s\u0103 dispar\u0103.\r\n"
+  characterSprite: {fileID: -7825428706676646253, guid: 0c2a7a83d54dcc74d9f4d9633e318dcd, type: 3}
+  targetImage: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 002168588b3b20c428a8d74245cefca7, type: 3}
+  animationDuration: 1
+  animationType: 0
