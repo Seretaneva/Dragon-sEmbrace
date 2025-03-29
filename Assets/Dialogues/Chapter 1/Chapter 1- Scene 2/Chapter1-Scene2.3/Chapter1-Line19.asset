@@ -15,9 +15,14 @@ MonoBehaviour:
   speakerName: Narator
   dialogText: "Nuala \xEE\u0219i simte sufletul divizat. \xCEi era ru\u0219ine de
     aceste g\xE2nduri negre, de invidia care-i p\u0103trundea inima."
-  characterSprite: {fileID: 0}
-  targetImage: 1
+  characterSprite: {fileID: -7825428706676646253, guid: 0c2a7a83d54dcc74d9f4d9633e318dcd, type: 3}
+  animationDuration: 1
+  animationType: 0
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 5
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
   spokenText: {fileID: 0}
   soundEffect: {fileID: 0}
-  animationDuration: 1
-  animationType: 4

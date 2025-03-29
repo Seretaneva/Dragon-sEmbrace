@@ -8,6 +8,7 @@ public class StartDialogue : MonoBehaviour
      
     void Start()
     {
+      
       Invoke("StartGame",timeBeforeDialogStart);
     }
 

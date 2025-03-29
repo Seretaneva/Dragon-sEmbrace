@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Threading;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -69,11 +70,12 @@ public class DialogManager : MonoBehaviour
             DialogueLine line = currentDialogNode.dialogLines[currentLineIndex];
             speakerNameText.text = line.speakerName;
             dialogueText.text = line.dialogText;
-
+            
             // GESTIONAREA PERSONAJELOR
-            UpdateCharacter(leftImage, line.characterSprite, line.animationType);
-            UpdateCharacter(centerImage, line.secondCharacterSprite, line.secondAnimationType);
-            UpdateCharacter(rightImage, line.thirdCharacterSprite, line.thirdAnimationType);
+            UpdateCharacter(leftImage, line.characterSprite, line.animationType,  line.animationDuration);
+
+            UpdateCharacter(centerImage, line.secondCharacterSprite, line.secondAnimationType, line.secondAnimationDuration);
+            UpdateCharacter(rightImage, line.thirdCharacterSprite, line.thirdAnimationType,line.thirdAnimationDuration);
 
             //PLAY AUDIO CLIPS
 
@@ -98,7 +100,7 @@ public class DialogManager : MonoBehaviour
 
     }
 
-    void UpdateCharacter(Image characterImage, Sprite newSprite, DialogueAnimation animationType)
+    void UpdateCharacter(Image characterImage, Sprite newSprite, DialogueAnimation animationType, float time)
     {
         if (characterImage == null) return;
 
@@ -106,11 +108,12 @@ public class DialogManager : MonoBehaviour
 
         if (newSprite != null)
         {
+
             characterImage.sprite = newSprite;
             characterImage.color = Color.white;
             characterImage.gameObject.SetActive(true);
         }
-
+  
         if (animationType != DialogueAnimation.None && animator != null)
         {
             ApplyAnimation(animator, animationType);
@@ -162,16 +165,17 @@ public class DialogManager : MonoBehaviour
     IEnumerator AnimateAndType(DialogueLine line)
     {
         // AȘTEAPTĂ DURATA ANIMAȚIEI DACĂ EXISTĂ
-        if (line.animationDuration > 0)
+              
+        if (line.animationDuration > 0 || line.secondAnimationDuration > 0 || line.thirdAnimationDuration > 0)
         {
              yield return StartCoroutine(TypeText(line.dialogText));
-            yield return new WaitForSeconds(line.animationDuration);
-        }
+     
+           yield return new WaitForSeconds(line.animationDuration);
+       }
 
         // START WRITING TEXT
-       
-
     }
+
     IEnumerator TypeText(string text)
     {
         if (isTyping) yield break;

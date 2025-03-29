@@ -15,9 +15,14 @@ MonoBehaviour:
   speakerName: Narator
   dialogText: " De ce trebuia sora ei s\u0103 aib\u0103 toate acestea? Nu era ea
     cea care merita m\u0103car o parte din aceast\u0103 dragoste?\r\n\r\n"
-  characterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}
-  targetImage: 0
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 8300000, guid: 4b6514981a2ace04085b73d585a91c26, type: 3}
+  characterSprite: {fileID: -7825428706676646253, guid: 0c2a7a83d54dcc74d9f4d9633e318dcd, type: 3}
   animationDuration: 1
-  animationType: 9
+  animationType: 0
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}

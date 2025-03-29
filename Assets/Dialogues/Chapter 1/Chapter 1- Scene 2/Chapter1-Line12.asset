@@ -15,9 +15,14 @@ MonoBehaviour:
   speakerName: Narator
   dialogText: " Lyra r\xE2de, cu o expresie luminoas\u0103. Fa\u021Ba Nualei este
     umbrit\u0103 de o expresie de dispre\u021B \u0219i invidie.\r\n"
-  characterSprite: {fileID: 9099799246485454495, guid: 7492f1786fdb13c41892c8c68532085e, type: 3}
-  targetImage: 1
+  characterSprite: {fileID: -7825428706676646253, guid: 0c2a7a83d54dcc74d9f4d9633e318dcd, type: 3}
+  animationDuration: 1
+  animationType: 0
+  secondCharacterSprite: {fileID: 7207357879087840274, guid: bcbf37b6bac304f40b01ca2097c7fc88, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 3
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
   spokenText: {fileID: 0}
   soundEffect: {fileID: 8300000, guid: 17b463bd20d0f9d458f12f5c3de8ac88, type: 3}
-  animationDuration: 1
-  animationType: 2

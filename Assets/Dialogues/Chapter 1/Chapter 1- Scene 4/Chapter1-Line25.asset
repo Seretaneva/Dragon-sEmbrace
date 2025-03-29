@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line25
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: "\xCEntr-o noapte, \xEEn timp ce se afla \xEEn camera ei, o cioar\u0103
+    cu aripi negre \u0219i ochi \xEEnfl\u0103c\u0103ra\u021Bi a b\u0103tut la fereastr\u0103,
+    av\xE2nd o scrisoare prins\u0103 de picior."
+  characterSprite: {fileID: 5764372548437959462, guid: 80d783ad388dc3a40aebfe8854f50f1f, type: 3}
+  animationDuration: 2
+  animationType: 1
+  secondCharacterSprite: {fileID: -544578560165824965, guid: e9c4027354f04d945b3e8fcc16e13b56, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 3
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: dccc19f3bd2629d4bb5cbc8a583d2e0b, type: 3}

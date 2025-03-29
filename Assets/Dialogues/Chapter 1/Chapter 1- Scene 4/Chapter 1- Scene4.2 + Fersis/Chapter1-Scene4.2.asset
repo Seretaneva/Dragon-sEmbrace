@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1910a859c178e42478b1b7884d36051f, type: 3}
+  m_Name: Chapter1-Scene4.2
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - {fileID: 11400000, guid: efe746fede9314d418c87b465c3eb22b, type: 2}
+  - {fileID: 11400000, guid: bd83e090772912b49b09e9fc5c64a1a0, type: 2}
+  - {fileID: 11400000, guid: a5e841f3573b5a446b92b98bd8dfd598, type: 2}
+  - {fileID: 11400000, guid: 2dc1ea12f0e9c234bbddf026f2832cc9, type: 2}
+  - {fileID: 11400000, guid: cdadeaf29b6bd594ead88b14a84e434e, type: 2}
+  - {fileID: 11400000, guid: 05b1bb04e54850f47b4d43e467fef2c5, type: 2}
+  - {fileID: 11400000, guid: 4eb7d13d22d29374d830e789b57c04c6, type: 2}
+  - {fileID: 11400000, guid: 5941038da4e28e34fb280ee9fd559373, type: 2}
+  choices: []
+  nextScene: Chapter1 Scene 5

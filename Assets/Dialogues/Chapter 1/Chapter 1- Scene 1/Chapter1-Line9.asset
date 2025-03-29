@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogText: "Dup\u0103 \u0219apte ani, Nuala urma s\u0103 se c\u0103s\u0103toreasc\u0103
     cu regele Eldran, pentru a \xEEnt\u0103ri leg\u0103tura dintre druizi \u0219i
     oameni."
-  characterSprite: {fileID: 6105594702028555733, guid: 98ac98d41b08d3a44bbfa550d7ca0904, type: 3}
+  characterSprite: {fileID: 2799284635865296233, guid: 8b5f52ff03e50d046b9f6db832589ca8, type: 3}
   animationDuration: 1
   animationType: 1
   secondCharacterSprite: {fileID: 0}

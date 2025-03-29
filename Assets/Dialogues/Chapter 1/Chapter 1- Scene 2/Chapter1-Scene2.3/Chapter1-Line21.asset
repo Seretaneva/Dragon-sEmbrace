@@ -15,9 +15,14 @@ MonoBehaviour:
   speakerName: Narator
   dialogText: "\u0218i totu\u0219i\u2026 oric\xE2t ar fi \xEEncercat s\u0103 o \xEEn\u0103bu\u0219e,
     invidia nu f\u0103cea dec\xE2t s\u0103 creasc\u0103, ca un foc ascuns sub cenu\u0219\u0103.\r\n"
-  characterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}
-  targetImage: 0
+  characterSprite: {fileID: -7825428706676646253, guid: 0c2a7a83d54dcc74d9f4d9633e318dcd, type: 3}
+  animationDuration: 1
+  animationType: 2
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
   spokenText: {fileID: 0}
   soundEffect: {fileID: 0}
-  animationDuration: 1
-  animationType: 3

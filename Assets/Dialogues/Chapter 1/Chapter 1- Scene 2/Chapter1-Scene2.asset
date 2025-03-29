@@ -24,3 +24,4 @@ MonoBehaviour:
       nu m\u0103 pot ab\u021Bine. "
     nextNode: {fileID: 11400000, guid: 76e2c73feb2d0ba4a8a2abec125d597a, type: 2}
   nextScene: 
+  backgroundMusic: {fileID: 8300000, guid: 65a0f04907b7d0547b049024ff8d29a6, type: 3}

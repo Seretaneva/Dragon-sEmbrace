@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line26
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: " Speriat\u0103 \u0219i intrigat\u0103, Nuala a deschis geamul, iar
+    o cea\u021B\u0103 dens\u0103 a umplut camera, \xEEntunec\xE2nd totul \xEEn jur.
+    Din aceast\u0103 cea\u021B\u0103 s-a ivit o umbr\u0103 neagr\u0103, care a \xEEnceput
+    s\u0103 vorbeasc\u0103:\r\n"
+  characterSprite: {fileID: 0}
+  animationDuration: 1
+  animationType: 2
+  secondCharacterSprite: {fileID: -544578560165824965, guid: e9c4027354f04d945b3e8fcc16e13b56, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 9
+  thirdCharacterSprite: {fileID: 7707446964579004009, guid: 791e1a9f51ffb0443a34cdee8a1b85f6, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 4
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 89637404ad6dd5a45b287872593adf2f, type: 3}

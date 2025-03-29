@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line42
+  m_EditorClassIdentifier: 
+  speakerName: Umbra
+  dialogText: "Pe l\xE2nga putere tu trebuie s\u0103 \xEEmi cre\u0219ti mo\u0219tenitorul
+    meu! Iar vraja pe care \u021Bi-o voi pune te va face \xEEns\u0103rcinat\u0103.
+    \r\n\n\n"
+  characterSprite: {fileID: 0}
+  animationDuration: 1
+  animationType: 0
+  secondCharacterSprite: {fileID: -7825428706676646253, guid: 0c2a7a83d54dcc74d9f4d9633e318dcd, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 7707446964579004009, guid: 791e1a9f51ffb0443a34cdee8a1b85f6, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 5
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 1812a53bd567b5c4ca639f8aaced6f4e, type: 3}

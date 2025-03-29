@@ -16,9 +16,14 @@ MonoBehaviour:
   dialogText: "Nuala \xEE\u0219i ridic\u0103 fruntea, privindu-i de departe cu o
     expresie de ghea\u021B\u0103: doar timpul o desp\u0103r\u021Bea de ziua \xEEn
     care va fi ea regina.\r\n"
-  characterSprite: {fileID: 3015776589659033986, guid: 3d41a21acda00b344931c4ec86ddd7b4, type: 3}
-  targetImage: 0
+  characterSprite: {fileID: 5737983095055366820, guid: e00fcfc41facd594d87a09c2cf329acc, type: 3}
+  animationDuration: 1
+  animationType: 2
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
   spokenText: {fileID: 0}
   soundEffect: {fileID: 0}
-  animationDuration: 1
-  animationType: 3

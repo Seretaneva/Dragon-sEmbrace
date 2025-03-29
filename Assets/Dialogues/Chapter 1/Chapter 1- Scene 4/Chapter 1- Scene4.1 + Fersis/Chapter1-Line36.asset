@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line36
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: "Din umbr\u0103 a ie\u0219it o m\xE2n\u0103 care i-a atins \xEEncet
+    umerii, urc\xE2nd spre g\xE2t \u0219i apoi spre obraji. Nuala se sim\u021Bea
+    vr\u0103jit\u0103 \u0219i, orbit\u0103 de invidie \u0219i ur\u0103, a cedat,
+    l\u0103s\xE2ndu-se \xEEn bra\u021Bele umbrei."
+  characterSprite: {fileID: 0}
+  animationDuration: 1
+  animationType: 7
+  secondCharacterSprite: {fileID: -505747286856160987, guid: e3c57d8a5a390fa4d9c46c5c97c23ac3, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 9
+  thirdCharacterSprite: {fileID: 2406566096671908881, guid: de4a0bc0f6bd415479d7c78b33876ce2, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: a7c12bccd81c91e458628ea608645ef3, type: 3}

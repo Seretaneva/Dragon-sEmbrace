@@ -7,6 +7,8 @@ public class DialogueNode : ScriptableObject
     public DialogueLine[] dialogLines;
     public Choice[] choices;
     public string nextScene;// name of the next scene to be loaded
+    [Header("Audio Settings")]
+public AudioClip backgroundMusic;
 }
 
 [System.Serializable]

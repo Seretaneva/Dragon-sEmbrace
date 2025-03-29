@@ -18,8 +18,13 @@ MonoBehaviour:
     conversa\u021Bie, iar Eldran \xEEi z\xE2mbe\u0219te cu c\u0103ldur\u0103 Lyrei,
     ating\xE2ndu-i m\xE2na \xEEntr-un gest de afec\u021Biune. "
   characterSprite: {fileID: -544578560165824965, guid: e9c4027354f04d945b3e8fcc16e13b56, type: 3}
-  targetImage: 0
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 8300000, guid: 1812a53bd567b5c4ca639f8aaced6f4e, type: 3}
   animationDuration: 1
   animationType: 1
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 1812a53bd567b5c4ca639f8aaced6f4e, type: 3}

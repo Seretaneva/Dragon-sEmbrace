@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1910a859c178e42478b1b7884d36051f, type: 3}
+  m_Name: Chapter1-Scene4
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - {fileID: 11400000, guid: d464a2c822c28004ba1bcb42d67cec5a, type: 2}
+  - {fileID: 11400000, guid: ea5e14d56baf805449d4aa28f6969da2, type: 2}
+  - {fileID: 11400000, guid: cb1905d7d996690459051b88631435f7, type: 2}
+  choices:
+  - choiceText: "Sunt gata s\u0103 fac orice."
+    nextNode: {fileID: 11400000, guid: e34f4588041d26448a2f9d907084ac0b, type: 2}
+  - choiceText: "Ce ai de c\xE2\u0219tigat din asta?"
+    nextNode: {fileID: 11400000, guid: 6db55e2ed13005e44acad04b341964b5, type: 2}
+  - choiceText: "Nu sunt sigur\u0103\u2026 dar \xEEmi doresc dreptatea."
+    nextNode: {fileID: 11400000, guid: 6d837a3b8c75c9243968b93bd93e12f6, type: 2}
+  nextScene: 

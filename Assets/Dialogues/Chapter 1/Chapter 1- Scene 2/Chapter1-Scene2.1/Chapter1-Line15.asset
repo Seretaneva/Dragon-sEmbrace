@@ -15,9 +15,14 @@ MonoBehaviour:
   speakerName: Narator
   dialogText: "\xCEn acel moment, \u0219i-a jurat c\u0103 \xEEntr-o zi va pune cap\u0103t
     acestei nedrept\u0103\u021Bi.\r\n\r\n"
-  characterSprite: {fileID: -7825428706676646253, guid: 0c2a7a83d54dcc74d9f4d9633e318dcd, type: 3}
-  targetImage: 0
+  characterSprite: {fileID: -544578560165824965, guid: e9c4027354f04d945b3e8fcc16e13b56, type: 3}
+  animationDuration: 1
+  animationType: 2
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
   spokenText: {fileID: 0}
   soundEffect: {fileID: 0}
-  animationDuration: 1
-  animationType: 3

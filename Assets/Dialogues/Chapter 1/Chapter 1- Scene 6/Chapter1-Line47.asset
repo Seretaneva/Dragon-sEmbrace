@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line47
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: " \xCEn acele viziuni, Nuala st\u0103tea pe tron al\u0103turi de regele
+    Eldran. "
+  characterSprite: {fileID: -5492162627137757667, guid: af72d089c07b75d42b91d71b7f595a44, type: 3}
+  animationDuration: 1
+  animationType: 9
+  secondCharacterSprite: {fileID: 6105594702028555733, guid: 3b9bdf30eb7b14243af55b309edfe750, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 3
+  thirdCharacterSprite: {fileID: 692404775658351593, guid: 8dac2e4ba3f09c14ba02d88f4a4b9f52, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 4
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: a7c12bccd81c91e458628ea608645ef3, type: 3}

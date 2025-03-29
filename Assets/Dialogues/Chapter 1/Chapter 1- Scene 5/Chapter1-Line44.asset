@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line44
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: "La scurt timp dup\u0103 aceea, Nuala a primit o nou\u0103 scrisoare
+    de la b\u0103rbatul misterios.\r\n\n"
+  characterSprite: {fileID: 7207357879087840274, guid: bcbf37b6bac304f40b01ca2097c7fc88, type: 3}
+  animationDuration: 1
+  animationType: 2
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 5737983095055366820, guid: e00fcfc41facd594d87a09c2cf329acc, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 4
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}

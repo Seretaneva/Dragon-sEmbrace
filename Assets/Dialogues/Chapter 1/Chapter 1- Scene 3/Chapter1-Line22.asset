@@ -15,9 +15,14 @@ MonoBehaviour:
   speakerName: Narator
   dialogText: "Au trecut anii, \u0219i \xEEntr-o zi de prim\u0103var\u0103, regina
     a venit \xEEn palat cu o veste minunat\u0103: era \xEEns\u0103rcinat\u0103. "
-  characterSprite: {fileID: 9099799246485454495, guid: 7492f1786fdb13c41892c8c68532085e, type: 3}
-  targetImage: 0
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 0}
+  characterSprite: {fileID: 5138575317272912424, guid: 653c8bb65db88f149a386559cee39312, type: 3}
   animationDuration: 1
   animationType: 1
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}

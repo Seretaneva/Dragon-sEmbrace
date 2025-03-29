@@ -9,17 +9,26 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuScene.unity
     guid: 893e1fbda05472f4fb2dd2865244cfa2
   - enabled: 1
-    path: Assets/Scenes/Chapter1 Scene 0.unity
+    path: Assets/Scenes/Chapter 1/Chapter1 Scene 0.unity
     guid: 2447dbbd0a529414c89383807c454484
   - enabled: 1
-    path: Assets/Scenes/Chapter1 Scene 1.unity
+    path: Assets/Scenes/Chapter 1/Chapter1 Scene 1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Chapter1 Scene 2.unity
+    path: Assets/Scenes/Chapter 1/Chapter1 Scene 2.unity
     guid: 56f611d7f1cdfc14daead19253227aa7
   - enabled: 1
-    path: Assets/Scenes/Chapter1 Scene 3.unity
+    path: Assets/Scenes/Chapter 1/Chapter1 Scene 3.unity
     guid: f992186fe5efda64e994a5bcbdf07fbb
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter1 Scene 4.unity
+    guid: bd628e10130bd5744884dfa179857810
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter1 Scene 5.unity
+    guid: f00e28a5ce7b412448a01333e3528be9
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter1 Scene 6.unity
+    guid: 53a01c87760cfa54b9de623257c9aefb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

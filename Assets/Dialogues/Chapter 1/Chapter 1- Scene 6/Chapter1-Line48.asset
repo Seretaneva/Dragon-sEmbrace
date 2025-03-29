@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line48
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: " Lyra a \xEEnceput s\u0103 o urm\u0103reasc\u0103 mai atent pe sora
+    sa \u0219i, \xEEntr-o noapte, a auzit voci din camera Nualei. Tr\u0103g\xE2nd
+    cu urechea, a fost \u0219ocat\u0103 s\u0103 descopere c\u0103 sora ei era \xEEndr\u0103gostit\u0103
+    de so\u021Bul ei \u0219i \xEEi dorea r\u0103ul.\r\n"
+  characterSprite: {fileID: -3912581859047395430, guid: 834908e93dde2ea4299f692ad1b34aa1, type: 3}
+  animationDuration: 1
+  animationType: 6
+  secondCharacterSprite: {fileID: 6105594702028555733, guid: 3b9bdf30eb7b14243af55b309edfe750, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 5
+  thirdCharacterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 9
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: a7c12bccd81c91e458628ea608645ef3, type: 3}

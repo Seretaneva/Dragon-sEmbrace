@@ -20,7 +20,7 @@ MonoBehaviour:
   characterSprite: {fileID: 0}
   animationDuration: 1
   animationType: 0
-  secondCharacterSprite: {fileID: 9099799246485454495, guid: 7492f1786fdb13c41892c8c68532085e, type: 3}
+  secondCharacterSprite: {fileID: 7207357879087840274, guid: bcbf37b6bac304f40b01ca2097c7fc88, type: 3}
   secondAnimationDuration: 1
   secondAnimationType: 3
   thirdCharacterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}

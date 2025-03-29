@@ -17,4 +17,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 775603c950219a9488af94cb600c53b4, type: 2}
   - {fileID: 11400000, guid: 6cb663f5139a0a64a8f96abeb243db96, type: 2}
   choices: []
-  nextScene: 
+  nextScene: Chapter1 Scene 4
+  backgroundMusic: {fileID: 8300000, guid: 9514433f1fc12464ab29bff018e10051, type: 3}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line27
+  m_EditorClassIdentifier: 
+  speakerName: Umbra
+  dialogText: "Nuala, \u0219tiu ce te apas\u0103 \u0219i \u0219tiu ce meri\u021Bi
+    cu adev\u0103rat. Tu trebuia s\u0103 fii regin\u0103, nu sora ta. Meri\u021Bi
+    mai mult dec\xE2t ai. Pe l\xE2ng\u0103 tron, sora ta \u021Bi-a furat \u0219i
+    dragostea. Eu sunt cel care te poate ajuta.\r\n\n"
+  characterSprite: {fileID: 0}
+  animationDuration: 1
+  animationType: 0
+  secondCharacterSprite: {fileID: -505747286856160987, guid: e3c57d8a5a390fa4d9c46c5c97c23ac3, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8593e1b694a1e147b3df1d5177eaa89, type: 3}
+  m_Name: Chapter1-Line34
+  m_EditorClassIdentifier: 
+  speakerName: Narator
+  dialogText: "Pentru a \xEEncheia acest pact, va trebui s\u0103 faci ceva, i-a \u0219optit
+    umbra, dezv\u0103luindu-se ca un b\u0103rbat misterios, cu ochii verzi ca de
+    \u0219arpe, p\u0103rul negru \u0219i o dung\u0103 sur\u0103 \xEEn partea st\xE2ng\u0103."
+  characterSprite: {fileID: 6522537540059597107, guid: 41ad656ef51250645b1fd238bad7657c, type: 3}
+  animationDuration: 5
+  animationType: 1
+  secondCharacterSprite: {fileID: 5737983095055366820, guid: e00fcfc41facd594d87a09c2cf329acc, type: 3}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 7707446964579004009, guid: 791e1a9f51ffb0443a34cdee8a1b85f6, type: 3}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 5
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 0}

@@ -19,3 +19,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c99afd8b2b597534db59b39d54860404, type: 2}
   choices: []
   nextScene: Chapter1 Scene 1
+  backgroundMusic: {fileID: 8300000, guid: 3f622bf6ea59e5b4b804b744eaeb7c64, type: 3}

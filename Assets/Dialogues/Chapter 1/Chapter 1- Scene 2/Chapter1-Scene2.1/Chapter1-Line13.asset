@@ -16,9 +16,14 @@ MonoBehaviour:
   dialogText: "Nuala \xEE\u0219i simte s\xE2ngele clocotind. Nu doar c\u0103 Lyra
     \xEEi luase locul \xEEn fa\u021Ba regelui, dar \u0219i toat\u0103 aten\u021Bia,
     toat\u0103 admira\u021Bia\u2026"
-  characterSprite: {fileID: 0}
-  targetImage: 1
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 0}
+  characterSprite: {fileID: -5072957590204455365, guid: 2072b99518677214f8bc03a7e2677a08, type: 3}
   animationDuration: 1
-  animationType: 4
+  animationType: 9
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 5
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: ec7b3f8e4406c8e47b1dbfa44578a1e1, type: 3}
