@@ -6,8 +6,10 @@ public class MainMenu: MonoBehaviour
 {
     [SerializeField] Button StartGameButton;
     [SerializeField] Button ContinueButton;
+    [SerializeField] Button SettingsButton;
     [SerializeField] Button ExitButton;
     [SerializeField] string StartScene;
+     [SerializeField] string NameOfSettingsMenuScene;
     void Start()
     {
         if(StartGameButton != null)
@@ -18,6 +20,10 @@ public class MainMenu: MonoBehaviour
         {
             ExitButton.onClick.AddListener(ExitGame);
         }
+        if(SettingsButton != null)
+        {
+            SettingsButton.onClick.AddListener(GoToSettingsMenu);
+        }
     }
     public void StartGame()
     {
@@ -26,5 +32,10 @@ public class MainMenu: MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void GoToSettingsMenu()
+    {
+        SceneTransitionManager.Instance.LoadSceneWithFade(NameOfSettingsMenuScene);
     }
 }
