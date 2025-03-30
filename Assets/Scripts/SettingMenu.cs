@@ -37,21 +37,23 @@ public class SettingMenu : MonoBehaviour
     }
     public void SetMusicVolume(float value)
 {
-    value = Mathf.Clamp(value, 0.0001f, 1.0f);
+    value = Mathf.Clamp(value, 0.01f, 1.0f);
     audioMixer.SetFloat("MusicVolume", Mathf.Log10(value) * 20);
+        Debug.Log(Mathf.Log10(value) * 20);
     PlayerPrefs.SetFloat("MusicVolume", value);
 }
 
 public void SetEffectsVolume(float value)
 {
-    value = Mathf.Clamp(value, 0.0001f, 1.0f);
+    value = Mathf.Clamp(value, 0.01f, 1.0f);
     audioMixer.SetFloat("EffectsVolume", Mathf.Log10(value) * 20);
+
     PlayerPrefs.SetFloat("EffectsVolume", value);
 }
 
 public void SetVoiceVolume(float value)
 {
-    value = Mathf.Clamp(value, 0.0001f, 1.0f);
+    value = Mathf.Clamp(value, 0.01f, 1.0f);
     audioMixer.SetFloat("VoiceVolume", Mathf.Log10(value) * 20);
     PlayerPrefs.SetFloat("VoiceVolume", value);
 }

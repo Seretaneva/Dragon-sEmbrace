@@ -5,6 +5,22 @@ public class PersistentMusic : MonoBehaviour
 {
     private static PersistentMusic instance;
 
+    public static object Instance { get; internal set; }
+    
+
+    void Start()
+    {
+        // Pornește muzica dacă nu e deja pornită
+        var audio = GetComponent<AudioSource>();
+        float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1f);
+        Debug.Log(musicVolume);
+        audio.volume = musicVolume;
+       
+        if (!audio.isPlaying)
+        {
+            audio.Play();
+        }
+    }
     void Awake()
     {
         string scene = SceneManager.GetActiveScene().name;
@@ -13,6 +29,7 @@ public class PersistentMusic : MonoBehaviour
         if (scene != "MainMenuScene" && scene != "Settings Menu")
         {
             Destroy(gameObject);
+            Debug.Log("S-a distrus muzica din menu");
             return;
         }
 
@@ -28,15 +45,7 @@ public class PersistentMusic : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        // Pornește muzica dacă nu e deja pornită
-        var audio = GetComponent<AudioSource>();
-        if (!audio.isPlaying)
-        {
-            audio.Play();
-        }
-    }
+   
 
     void Update()
     {

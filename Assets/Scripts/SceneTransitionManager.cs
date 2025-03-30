@@ -38,7 +38,7 @@ public class SceneTransitionManager : MonoBehaviour
    IEnumerator FadeAndLoad(string sceneToLoad)
 {
    
-     BackgroundMusicFader musicFader = FindObjectOfType<BackgroundMusicFader>();
+        BackgroundMusicFader musicFader = Object.FindFirstObjectByType<BackgroundMusicFader>();
         if (musicFader != null)
         {
             yield return StartCoroutine(musicFader.FadeOut());
