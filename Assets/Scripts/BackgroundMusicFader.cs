@@ -5,7 +5,7 @@ using UnityEngine;
 public class BackgroundMusicFader : MonoBehaviour
 {
     [SerializeField] float fadeDuration = 2.0f;
-    [SerializeField] float targetVolume = 0.5f;
+    [SerializeField] float targetVolume = 1f;
 
     AudioSource audioSource;
 
