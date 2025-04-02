@@ -19,8 +19,13 @@ MonoBehaviour:
     apar\u021Binea clanului omenesc, iar regina Lyra f\u0103cea parte din clanul
     druizilor. "
   characterSprite: {fileID: 0}
-  targetImage: 0
-  spokenText: {fileID: 0}
-  soundEffect: {fileID: 0}
   animationDuration: 1
   animationType: 0
+  secondCharacterSprite: {fileID: 0}
+  secondAnimationDuration: 1
+  secondAnimationType: 0
+  thirdCharacterSprite: {fileID: 0}
+  thirdAnimationDuration: 1
+  thirdAnimationType: 0
+  spokenText: {fileID: 8300000, guid: 36b4d00fe692ded4e846375cb2556f06, type: 3}
+  soundEffect: {fileID: 8300000, guid: 5d02bfdc082c1744099e459b1f7b7cf4, type: 3}

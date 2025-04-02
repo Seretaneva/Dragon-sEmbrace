@@ -6,9 +6,9 @@ public class SettingMenu : MonoBehaviour
 {
     [SerializeField] Button backButton;
     [SerializeField] string NameOfMainMenuScene;
-    [SerializeField] Slider bMSlider;
-    [SerializeField] Slider sESlider;
-    [SerializeField] Slider vESlider;
+    [SerializeField] Slider musicSlider;
+    [SerializeField] Slider effectsSlider;
+    [SerializeField] Slider voiceSlider;
     [SerializeField] AudioMixer audioMixer;
     void Start()
     {
@@ -21,11 +21,15 @@ public class SettingMenu : MonoBehaviour
     float effectsVolume = PlayerPrefs.GetFloat("EffectsVolume", 1.0f);
     float voiceVolume = PlayerPrefs.GetFloat("VoiceVolume", 1.0f);
 
-    bMSlider.value = musicVolume;
-    sESlider.value = effectsVolume;
-    vESlider.value = voiceVolume;
+    float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
+    musicSlider.value = savedVolume;
+  //  musicSlider.value = musicVolume;
+    effectsSlider.value = effectsVolume;
+    voiceSlider.value = voiceVolume;
 
-    SetMusicVolume(musicVolume);
+   
+    SetMusicVolume(savedVolume);
+  //  SetMusicVolume(musicVolume);
     SetEffectsVolume(effectsVolume);
     SetVoiceVolume(voiceVolume);
 
@@ -35,19 +39,21 @@ public class SettingMenu : MonoBehaviour
     {
         SceneTransitionManager.Instance.LoadSceneWithFade(NameOfMainMenuScene);
     }
-    public void SetMusicVolume(float value)
+public void SetMusicVolume(float value)
 {
-    value = Mathf.Clamp(value, 0.01f, 1.0f);
-    audioMixer.SetFloat("MusicVolume", Mathf.Log10(value) * 20);
-        Debug.Log(Mathf.Log10(value) * 20);
+    value = Mathf.Clamp(value, 0.001f, 1.0f);
+    float dB = Mathf.Log10(value) * 20;
+    audioMixer.SetFloat("MusicVolume", dB);
     PlayerPrefs.SetFloat("MusicVolume", value);
+    PlayerPrefs.Save();
 }
+
+
 
 public void SetEffectsVolume(float value)
 {
     value = Mathf.Clamp(value, 0.01f, 1.0f);
     audioMixer.SetFloat("EffectsVolume", Mathf.Log10(value) * 20);
-
     PlayerPrefs.SetFloat("EffectsVolume", value);
 }
 

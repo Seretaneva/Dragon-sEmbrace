@@ -38,14 +38,6 @@ public AudioClip spokenText;
 public AudioClip soundEffect;
 }
 
-// public enum DialogueTarget
-// {
-// LeftImage,
-// RightImage,
-// CenterImage
-
-// }
-
 public enum DialogueAnimation{
     None,
     LeftEnteringScene,
