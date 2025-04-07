@@ -43,7 +43,7 @@ public class DialogManager : MonoBehaviour
         choicePanel.SetActive(false);
         //ADD LISTENER TO PROGRESS BUTTON
         progressButton.onClick.AddListener(OnClickEvent);
-
+            
     }
 
     public void StartDialogue(DialogueNode startNode)
@@ -160,7 +160,6 @@ public class DialogManager : MonoBehaviour
                 break;
         }
     }
-
 
     IEnumerator AnimateAndType(DialogueLine line)
     {
@@ -322,4 +321,5 @@ public class DialogManager : MonoBehaviour
     }
 
    
+
 }

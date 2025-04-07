@@ -4,40 +4,26 @@ using UnityEngine.UI;
 
 public class SettingMenu : MonoBehaviour
 {
-    [SerializeField] Button backButton;
-    [SerializeField] string NameOfMainMenuScene;
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider effectsSlider;
     [SerializeField] Slider voiceSlider;
     [SerializeField] AudioMixer audioMixer;
     void Start()
     {
-        if (backButton != null)
-    {
-        backButton.onClick.AddListener(GoBackToMainMenu);
-    }
-
     float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
     float effectsVolume = PlayerPrefs.GetFloat("EffectsVolume", 1.0f);
     float voiceVolume = PlayerPrefs.GetFloat("VoiceVolume", 1.0f);
 
     float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
     musicSlider.value = savedVolume;
-  //  musicSlider.value = musicVolume;
     effectsSlider.value = effectsVolume;
     voiceSlider.value = voiceVolume;
 
    
     SetMusicVolume(savedVolume);
-  //  SetMusicVolume(musicVolume);
     SetEffectsVolume(effectsVolume);
     SetVoiceVolume(voiceVolume);
 
-    }
-
-    public void GoBackToMainMenu()
-    {
-        SceneTransitionManager.Instance.LoadSceneWithFade(NameOfMainMenuScene);
     }
 public void SetMusicVolume(float value)
 {

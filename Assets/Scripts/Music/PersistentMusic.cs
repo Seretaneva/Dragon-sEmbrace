@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -7,30 +8,54 @@ public class PersistentMusic : MonoBehaviour
     private static PersistentMusic instance;
 
     [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private float fadeDuration = 1f;
+
+    private AudioSource audioSource;
 
     void Awake()
     {
-        if (instance != null && instance != this)
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
         {
             Destroy(gameObject);
             return;
         }
 
-        instance = this;
-        DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Start()
     {
-        var audio = GetComponent<AudioSource>();
         float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
-
-        // Aplică doar în mixer!
         ApplyVolumeToMixer(savedVolume);
 
-        if (!audio.isPlaying)
-            audio.Play();
+        Scene currentScene = SceneManager.GetActiveScene();
+        HandleMusicForScene(currentScene.name);
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        HandleMusicForScene(scene.name);
+    }
+
+    void HandleMusicForScene(string sceneName)
+    {
+        if (sceneName == "MainMenuScene" || sceneName == "Settings Menu")
+        {
+            if (!audioSource.isPlaying)
+            {
+                StartCoroutine(FadeInAndPlay());
+            }
+        }
+        else
+        {
+            StartCoroutine(FadeOutAndStop());
+        }
     }
 
     void ApplyVolumeToMixer(float volume)
@@ -40,11 +65,33 @@ public class PersistentMusic : MonoBehaviour
         audioMixer.SetFloat("MusicVolume", dB);
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    IEnumerator FadeOutAndStop()
     {
-        if (scene.name != "MainMenuScene" && scene.name != "Settings Menu")
+        float startVolume = audioSource.volume;
+
+        while (audioSource.volume > 0f)
         {
-            Destroy(gameObject);
+            audioSource.volume -= startVolume * Time.deltaTime / fadeDuration;
+            yield return null;
         }
+
+        audioSource.Stop();
+        audioSource.volume = startVolume; // Reset pentru data viitoare
+    }
+
+    IEnumerator FadeInAndPlay()
+    {
+        audioSource.volume = 0f;
+        audioSource.Play();
+
+        float targetVolume = 1f;
+
+        while (audioSource.volume < targetVolume)
+        {
+            audioSource.volume += Time.deltaTime / fadeDuration;
+            yield return null;
+        }
+
+        audioSource.volume = targetVolume;
     }
 }

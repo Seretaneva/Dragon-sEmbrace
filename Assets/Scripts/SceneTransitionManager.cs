@@ -11,7 +11,7 @@ public class SceneTransitionManager : MonoBehaviour
 
     [SerializeField] Image fadeImage;
     [SerializeField] TMP_Text text;
-    [SerializeField] float fadeDuration = 0.05f;
+    [SerializeField] float fadeDuration = 0.5f;
 
     void Awake()
     {
@@ -24,47 +24,52 @@ public class SceneTransitionManager : MonoBehaviour
         {
             fadeImage.gameObject.SetActive(true);
             //START FADING
-            StartCoroutine(FadeOut());
+            StartCoroutine(FadeOut(null));
         }
-         if (text != null)
+        if (text != null)
         {
             text.gameObject.SetActive(true);
+            text.raycastTarget = false;
             //START FADING
-            StartCoroutine(TextFadeOut());
+            StartCoroutine(TextFadeOut(null));
         }
-       
-
-
     }
+
 
     public void LoadSceneWithFade(string sceneName)
 
     {
-       
         StartCoroutine(FadeAndLoad(sceneName));
     }
-    
-   IEnumerator FadeAndLoad(string sceneToLoad)
-{
-   
+
+    IEnumerator FadeAndLoad(string sceneToLoad)
+    {
+
         BackgroundMusicFader musicFader = Object.FindFirstObjectByType<BackgroundMusicFader>();
         if (musicFader != null)
         {
             yield return StartCoroutine(musicFader.FadeOut());
         }
 
-    yield return StartCoroutine(FadeIn()); 
-    yield return StartCoroutine(TextFadeIn());
+         
+       bool fadeInDone = false;
+    bool textFadeInDone = false;
 
+    // Rulează simultan
+    StartCoroutine(FadeIn(() => fadeInDone = true));
+    StartCoroutine(TextFadeIn(() => textFadeInDone = true));
 
-    // Load the new scene
-    SceneManager.LoadScene(sceneToLoad);
-}
+    // Așteaptă până când ambele sunt gata
+    yield return new WaitUntil(() => fadeInDone && textFadeInDone);
+       
+        // Load the new scene
+        SceneManager.LoadScene(sceneToLoad);
+    }
 
-    IEnumerator FadeIn()
+    IEnumerator FadeIn(System.Action onComplete)
     {
 
-        if (fadeImage != null )
+        if (fadeImage != null)
         {
             Color color = fadeImage.color;
             color.a = 0;
@@ -76,73 +81,77 @@ public class SceneTransitionManager : MonoBehaviour
             }
             color.a = 1;
             fadeImage.color = color;
-          
+
         }
+         onComplete?.Invoke();
     }
 
-    IEnumerator FadeOut()
+    IEnumerator FadeOut(System.Action onComplete)
     {
 
-        if (fadeImage != null )
+        if (fadeImage != null)
         {
             Color color = fadeImage.color;
-           
+
             color.a = 1;
-        
+
             for (float i = 0; i < fadeDuration; i += Time.deltaTime)
             {
                 color.a = Mathf.Lerp(1, 0, i / fadeDuration);
-                
+
                 fadeImage.color = color;
-               
+
                 yield return null;
             }
             color.a = 0;
             fadeImage.color = color;
-           
+
         }
+         onComplete?.Invoke();
     }
-    IEnumerator TextFadeIn()
+    IEnumerator TextFadeIn(System.Action onComplete)
     {
 
-        if ( text != null)
+        if (text != null)
         {
             Color color1 = text.color;
             color1.a = 0;
 
             for (float i = 0; i < fadeDuration; i += Time.deltaTime)
             {
-               
+
                 color1.a = Mathf.Lerp(0, 1, i / fadeDuration);
                 text.color = color1;
-              
+
                 yield return null;
             }
-            
+
             text.color = color1;
         }
+         onComplete?.Invoke();
     }
- IEnumerator TextFadeOut()
+    IEnumerator TextFadeOut(System.Action onComplete)
     {
 
-        if (text != null )
+        if (text != null)
         {
-         
+
             Color color1 = text.color;
-           
+
             color1.a = 1;
 
             for (float i = 0; i < fadeDuration; i += Time.deltaTime)
             {
-                
+
                 color1.a = Mathf.Lerp(1, 0, i / fadeDuration);
-               
+
                 text.color = color1;
                 yield return null;
             }
-            
+
             color1.a = 0;
             text.color = color1;
         }
+         onComplete?.Invoke();
     }
 }
